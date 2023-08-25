@@ -7,3 +7,7 @@ apt-cache policy docker-ce
 sudo apt install docker-ce -y
 sudo systemctl start docker
 sudo systemctl status docker
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube start
+minikube kubectl -- get po -A
