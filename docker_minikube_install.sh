@@ -14,5 +14,5 @@ sudo usermod -aG docker $USER
 sudo systemctl restart docker
 minikube start --driver=docker
 docker info
-minikube start -y
+minikube start 
 minikube kubectl -- get po -A
